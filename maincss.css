@@ -1,0 +1,179 @@
+html {
+    background-color: #1A1A1D;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #1A1A1D;
+    z-index: 999; /* Ensure menu is on top of other content */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu-button {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #1A1A1D;
+    color: #C3073F;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 50px;
+    font-size: 20px;
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+.menu-button:last-child {
+    margin-right: 0;
+}
+
+.menu-button:hover {
+    background-color: #1A1A1D;
+    animation: none;
+}
+
+.current-menu-button {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #1A1A1D;
+    color: #C3073F;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.current-menu-button:last-child {
+    margin-right: 0;
+}
+
+.current-menu-button:hover {
+    background-color: #1A1A1D;
+    animation: none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.nazwa {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    font-style: normal; 
+    margin-left: 30px; 
+    margin-right: 80px; /* Margines odstępu od przycisków */
+    color: #C3073F;
+}
+
+.nazwa2 {
+    color: #6F2232;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    color: rgb(210, 209, 209);
+    font-size: 20px;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.description2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(210, 209, 209);
+    font-size: 20px;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #edf5e1;
+    font-family: "Sora", sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #232327;
+    padding: 20px;
+    text-align: center;
+    color: #edf5e1;
+    font-family: "Sora", sans-serif;
+}
+
+a {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: inherit; /* Ustawienie koloru odziedziczonego */
+}
+
+.nagl {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal; 
+    margin-left: 30px; 
+    margin-right: 80px; /* Margines odstępu od przycisków */
+    color: #C3073F;
+}
+
+.tytp {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    font-style: normal; 
+    margin-left: 30px; 
+    margin-right: 80px; /* Margines odstępu od przycisków */
+    color: #9b173e;
+}
+
+#banner {
+    background-attachment: fixed;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background: url("band.jpg");
+    background-size: 150%; /* Initial zoomed-in state */
+    background-position: center;
+    transition: 0.5s;
+    z-index: 0;
+}

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #1A1A1D;
+    color: #edf5e1;
+    margin: 0;
+    padding: 0;
+}
+header {
+position: fixed;
+width: 100%;
+top: 0;
+background-color: #1A1A1D;
+z-index: 999; /* Ensure menu is on top of other content */
+}
+
+.menu {
+display: flex;
+align-items: center;
+width: 100%;
+padding: 10px 0;
+}
+
+.menu-button {
+font-family: "Bebas Neue", sans-serif;
+background-color: #1A1A1D;
+color: #C3073F;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s;
+margin-right: 50px;
+font-size: 20px;
+animation: bounce 0.5s ease infinite alternate;
+}
+
+.menu-button:last-child {
+margin-right: 0;
+}
+
+.menu-button:hover {
+background-color: #1A1A1D;
+animation: none;
+}
+
+.current-menu-button {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #1A1A1D;
+    color: #C3073F;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.current-menu-button:last-child {
+    margin-right: 0;
+}
+
+.current-menu-button:hover {
+    background-color: #1A1A1D;
+    animation: none;
+}
+
+@keyframes bounce {
+0% {
+transform: translateY(0);
+}
+100% {
+transform: translateY(-5px);
+}
+}
+
+.nazwa {
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-size: 36px;
+font-style: normal; 
+margin-left: 30px; 
+margin-right: 80px; /* Margines odstępu od przycisków */
+color: #C3073F;
+}
+
+.nazwa2 {
+color: #6F2232;
+}
+.df {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #C3073F;
+    text-align: center;
+    margin-top: 100px;
+}
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+a {
+text-decoration: none; /* Usunięcie podkreślenia */
+color: inherit; /* Ustawienie koloru odziedziczonego */
+}

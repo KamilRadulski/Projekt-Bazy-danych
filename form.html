@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css"/>
+    <title>Propozycja Artysty Muzycznego</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="main.html"><h1 class="nazwa"> Music<a href="main.html" class="nazwa2">_er</a> </h1></a>
+            <a href="mothica.html" class="menu-button">Mothica</a>
+            <a href="sophie_powers.html" class="menu-button">Sophie Powers</a>
+            <a href="scarlet.html" class="menu-button">Scarlet Iris</a>
+            <a href="about.html" class="menu-button">About</a>
+            <a href="form.html" class="current-menu-button">Twój Artysta!</a>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br>
+    <form method="post" action="form.php">
+        <h1>Zaproponuj Artystę Muzycznego</h1>
+        <label for="artist_name">Nazwa Artysty:</label>
+        <input type="text" id="artist_name" name="artist_name" required>
+        <label for="genre">Gatunek Muzyczny:</label>
+        <input type="text" id="genre" name="genre" required>
+        <label for="description">Opis:</label>
+        <textarea id="description" name="description" required></textarea>
+        <input type="submit" value="Zaproponuj">
+    </form>
+</body>
+</html>
